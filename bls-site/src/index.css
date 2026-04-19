@@ -1,0 +1,33 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold: #C8893A;
+  --gold-light: #E4A558;
+  --gold-dark: #9E6B27;
+  --dark: #0F0F0D;
+  --dark-2: #1A1A17;
+  --dark-3: #252520;
+  --cream: #F5F0E8;
+  --cream-2: #EDE6D8;
+  --text: #1A1A17;
+  --text-muted: #6B6358;
+  --white: #FFFFFF;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+::selection { background: var(--gold); color: var(--white); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark-2); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
